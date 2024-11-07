@@ -1,7 +1,23 @@
 header {
   background-image: url("../img/wall.png");
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 main {
   background-image: url("../img/cork.png");
+  display: flex;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 5rem;
 }
