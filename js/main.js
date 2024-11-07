@@ -8,8 +8,17 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
       col.className = "col-12 col-md-6 col-lg-4 d-flex";
 
       const photoDiv = document.createElement("div");
-      photoDiv.className = "d-flex flex-column h-100 border text-center p-3";
+      photoDiv.className =
+        "d-flex flex-column h-100 border text-center p-3 position-relative";
       photoDiv.style.backgroundColor = "white";
+
+      // Img pin
+      const pin = document.createElement("div");
+      pin.className = "pin";
+      const pinImg = document.createElement("img");
+      pinImg.src = "./img.pin.svg";
+      pin.appendChild(pinImg);
+      photoDiv.appendChild(pin);
 
       // Img
       const img = document.createElement("img");
