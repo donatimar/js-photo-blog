@@ -5,10 +5,10 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
     post.forEach((photo) => {
       const col = document.createElement("div");
-      col.className = "col-12 col-md-6 col-lg-4";
+      col.className = "col-12 col-md-6 col-lg-4 d-flex";
 
       const photoDiv = document.createElement("div");
-      photoDiv.className = "border text-center";
+      photoDiv.className = "d-flex flex-column h-100 border text-center p-3";
 
       // Img
       const img = document.createElement("img");
@@ -18,10 +18,10 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
       // Img Title
       const title = document.createElement("p");
-      title.className = "mt-3";
+      title.className = "mt-3 mb-0";
       title.textContent = photo.title;
 
-      // Aggiung img e title
+      // Aggiungi img e title
       photoDiv.appendChild(img);
       photoDiv.appendChild(title);
       col.appendChild(photoDiv);
