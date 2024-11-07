@@ -16,7 +16,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
       const pin = document.createElement("div");
       pin.className = "pin";
       const pinImg = document.createElement("img");
-      pinImg.src = "./img.pin.svg";
+      pinImg.src = "./img/pin.svg";
       pin.appendChild(pinImg);
       photoDiv.appendChild(pin);
 
