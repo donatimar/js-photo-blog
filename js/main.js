@@ -28,7 +28,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
       // Img Title
       const title = document.createElement("p");
-      title.className = "fst-italic mt-3 mb-0";
+      title.className = "fst-italic fs-5 mt-3 mb-0 text-start text-capitalize";
       title.textContent = photo.title;
 
       // Aggiungi img e title

@@ -1,3 +1,7 @@
+body {
+  font-family: "Edu TAS Beginner", sans-serif;
+}
+
 header {
   background-image: url("../img/wall.png");
   height: 15vh;
