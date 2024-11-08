@@ -1,9 +1,9 @@
 fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
   .then((response) => response.json())
-  .then((post) => {
+  .then((posts) => {
     const photoContainer = document.getElementById("photoContainer");
 
-    post.forEach((photo) => {
+    posts.forEach((post) => {
       const col = document.createElement("div");
       col.className = "col-12 col-md-6 col-lg-4 d-flex";
 
@@ -22,22 +22,35 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
       // Img
       const img = document.createElement("img");
-      img.src = photo.url;
-      img.alt = photo.title;
+      img.src = post.url;
+      img.alt = post.title;
       img.className = "img-fluid";
 
       // Img Title
       const title = document.createElement("p");
       title.className = "fst-italic fs-5 mt-3 mb-0 text-start text-capitalize";
-      title.textContent = photo.title;
+      title.textContent = post.title;
 
       // Aggiungi img e title
       photoDiv.appendChild(img);
       photoDiv.appendChild(title);
       col.appendChild(photoDiv);
       photoContainer.appendChild(col);
+
+      // Aggiungi addEventListener ai post
+      photoDiv.addEventListener("click", () => {
+        const overlay = document.getElementById("overlay");
+        const overlayImage = overlay.querySelector("img");
+        overlayImage.src = post.url;
+        overlay.style.display = "flex";
+      });
     });
   })
   .catch((error) =>
-    console.error("Errore durante il caricamento delle immagini:", error)
+    console.error("Errore durante il caricamento delle immagini", error)
   );
+
+// Gestione pulsante di chiusura overlay
+document.getElementById("closeOverlay").addEventListener("click", () => {
+  document.getElementById("overlay").style.display = "none";
+});
