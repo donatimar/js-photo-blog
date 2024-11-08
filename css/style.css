@@ -63,6 +63,11 @@ h1 {
   z-index: 13;
 }
 
+#closeOverlay {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
 .post-container {
   position: relative;
   transition: all 0.3s ease;
