@@ -21,6 +21,10 @@ h1 {
   font-size: 5rem;
 }
 
+h1:hover {
+  cursor: pointer;
+}
+
 .pin {
   position: absolute;
   top: -10px;
