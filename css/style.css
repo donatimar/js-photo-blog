@@ -10,12 +10,6 @@ header {
   justify-content: center;
 }
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
 main {
   background-image: url("../img/cork.png");
   display: flex;
