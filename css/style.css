@@ -63,7 +63,6 @@ h1 {
   z-index: 13;
 }
 
-/* Nuovo contenitore per i post con hover */
 .post-container {
   position: relative;
   transition: all 0.3s ease;
