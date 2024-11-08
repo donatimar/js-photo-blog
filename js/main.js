@@ -5,11 +5,11 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
     posts.forEach((post) => {
       const col = document.createElement("div");
-      col.className = "col-12 col-md-6 col-lg-4 d-flex";
+      col.className = "col-12 col-md-6 col-lg-4";
 
       const photoDiv = document.createElement("div");
       photoDiv.className =
-        "d-flex flex-column h-100 border text-center p-3 position-relative";
+        "post-container d-flex flex-column h-100 border text-center p-3 position-relative";
       photoDiv.style.backgroundColor = "white";
 
       // Img pin
