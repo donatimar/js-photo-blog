@@ -1,4 +1,5 @@
 fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
+  // attendi la promise e chiama il metodo json
   .then((response) => response.json())
   .then((posts) => {
     const photoContainer = document.getElementById("photoContainer");
