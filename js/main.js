@@ -9,8 +9,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
       const photoDiv = document.createElement("div");
       photoDiv.className =
-        "post-container d-flex flex-column h-100 border text-center p-3 position-relative";
-      photoDiv.style.backgroundColor = "white";
+        "post-container d-flex flex-column h-100 border text-center p-3 position-relative white-background";
 
       // Img pin
       const pin = document.createElement("div");

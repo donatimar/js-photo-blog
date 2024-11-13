@@ -13,7 +13,6 @@ header {
 main {
   background-image: url("../img/cork.png");
   display: flex;
-  flex-grow: 1;
   min-height: 100vh;
 }
 
@@ -58,7 +57,7 @@ h1:hover {
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 13;
+  z-index: 3;
 }
 
 #closeOverlay {
@@ -70,6 +69,7 @@ h1:hover {
   position: relative;
   transition: all 0.3s ease;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  background-color: white;
 }
 
 .post-container:hover {
