@@ -25,7 +25,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
       img.alt = post.title;
       img.className = "img-fluid";
 
-      // Img Title
+      // Title
       const title = document.createElement("p");
       title.className = "fst-italic fs-5 mt-3 mb-0 text-start text-capitalize";
       title.textContent = post.title;
